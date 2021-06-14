@@ -1,0 +1,38 @@
+//transition navigator
+
+
+
+               Navigator.push(
+                    context,
+                    PageRouteBuilder(
+                      transitionDuration: Duration(seconds: 1),
+                      pageBuilder: (_, __, ___) => RegisterPage(),
+                    ),
+                  );
+                  
+                  
+                  
+                  
+                  
+                  
+  // once get in no back only out
+  
+  
+                  Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(builder: (context) =>  ChatPage(),),
+                                (Route<dynamic> route) => false,
+                );
+                
+                
+                
+                
+   // normal navigator with back option
+   
+   
+   
+    Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SecondRoute()),
+            );
+            
